@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 
-class IconButtonBuilder extends StatelessWidget {
-  const IconButtonBuilder({
+class AppBackButton extends StatelessWidget {
+  const AppBackButton({
     Key? key,
-    this.onpressed,
-    this.icon,
   }) : super(key: key);
-  final VoidCallback? onpressed;
-  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +16,11 @@ class IconButtonBuilder extends StatelessWidget {
         color: const Color(0xff514BC3),
       ),
       child: IconButton(
-        onPressed: () {},
-        icon: Icon(
-          icon,
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+        icon: const Icon(
+          Icons.arrow_back_ios_new,
           color: Colors.white,
         ),
       ),
