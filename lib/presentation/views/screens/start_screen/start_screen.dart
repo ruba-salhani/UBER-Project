@@ -7,14 +7,6 @@ class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: DrawerBuilder(),
-      appBar: AppBar(),
-      body: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-        ElevatedButton(
-          child: Text('kkkk'),
-          onPressed: () {},
-        )
-      ]),
     );
   }
 }
